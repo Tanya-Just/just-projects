@@ -4,7 +4,7 @@ console.log('Welcome aboard');
 
 const dino = new Passenger('DJ Dino', 37);
 const michael = new Passenger('DJ Michael', 35);
-const donatella = new Passenger('Donatella', 50, 'design');
+const donatella = new Passenger('Donatella', 50);
 const blond = new Passenger('DJ Blond', 33);
 
 const paxs = [dino, michael, donatella, blond]
@@ -20,9 +20,8 @@ blond.children.push('boy 2');
 blond.catering.push('standart');
 
 
-/*printName = (Passenger) => console.log(Passenger.name);
-paxs.forEach(printName); //list of names*/
-//console.log(paxs);
+printName = (Passenger) => console.log(Passenger.name);
+paxs.forEach(printName); //list of names
 
 console.log(paxs);
 
